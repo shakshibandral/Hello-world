@@ -60,3 +60,28 @@ if u%2==0&u%2!=1:
 else:
     print("not even number")
 
+class table:
+    def __init__(self,material,colour):
+        self.material=material
+        self.colour=colour
+    def showinfo(self):
+        print("material",self.material)
+        print('colour',self.colour)
+        return
+c1=table('wood','brown')
+c1.showinfo
+
+# prime number:
+n=int(input("enter the numbner"))
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n**.5)+1):
+        if n%2==0:
+            return False
+        return True
+if is_prime(n):
+    print("prime number")
+else:
+    ("not prime number")
+
