@@ -85,3 +85,84 @@ if is_prime(n):
 else:
     ("not prime number")
 
+# find the even number:
+g=87
+if g%2==0&g%2!=1:
+     print("even number")
+else:
+    print("not even number")
+e="@sakshibandral"
+print(e)
+
+class table:
+    def  __init__(self,color,material):
+        self.color=color
+        self.material=material
+    def detail(self):
+        print("color",self.color)
+        print("material",self.material)
+        return
+t1=table("brown","wood")
+t1.detail()
+
+class laptop:
+    def __init__(self,core,material,company):
+        self.core=core
+        self.material=material
+        self.company=company
+    def showinfo(self):
+        print("core",self.core)
+        print("material",self.material)
+        print("company",self.company)
+        return
+l2=laptop("i5","steel","hp")
+l2.showinfo()
+
+
+# find the area of rectangle:
+a=int(input("enter the len"))
+g=int(input("enter the breadth"))
+area=(a*g)
+perimeter=2*(a+g)
+print(area ,'the value of area')
+print(perimeter,'value of perimeter')
+
+class rectangle:
+    def  __init__(self,len,breadth):
+        self.len=len
+        self.breadth=breadth
+    def area(self):
+        return self.len*self.breadth
+square=rectangle(2,2)
+print("area is",square.area())
+rect=rectangle(3,6)
+print("area",rect.area())
+
+# bankaccount:
+class bankaccount:
+    def  __init__(self,balance,acc_number):
+        self.balance=balance
+        self.acc_number=acc_number
+    def deposist(self,amount):
+        self.balance+=amount
+    def  withdrawl(self,amount):
+        self.balance-=amount
+account1=bankaccount(1234,'123456789')
+print(account1.acc_number)
+print(account1.balance)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
